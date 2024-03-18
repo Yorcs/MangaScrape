@@ -15,9 +15,8 @@ for manga in mangas:
         genre = manga.find('div', class_ = 'textsmall').text
         mangaName = mangaSubInfo.find('a', attrs={"alt" : "Series Info"}).text
 
-        print (f'''
-        mangaName = {mangaName}
-        genre = {genre}
-        yearPublished = {yearPublished}
-        ''')
+        print(f"Manga Name: {mangaName.strip()}")
+        print(f"Genre: {genre.strip()}")
+        print(f"Year Published: {yearPublished.strip()}")
+        
         print('')
